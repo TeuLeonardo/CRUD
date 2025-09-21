@@ -71,7 +71,7 @@ class Aluno {
       );
 
       let imgDelete = document.createElement("img");
-      imgDelete.src = "./img/delete.png";
+      imgDelete.src = "img/delete.png";
       imgDelete.setAttribute(
         "onclick",
         "aluno.deletar(" + this.arrayAlunos[i].matricula + ")"
@@ -187,14 +187,14 @@ class Aluno {
         td_acoes.classList.add("center");
 
         let imgEdit = document.createElement("img");
-        imgEdit.src = "./img/edit.png";
+        imgEdit.src = "img/edit.png";
         imgEdit.setAttribute(
           "onclick",
           "aluno.editar(" + JSON.stringify(this.arrayAlunos[i]) + ")"
         );
 
         let imgDelete = document.createElement("img");
-        imgDelete.src = "./img/delete.png";
+        imgDelete.src = "img/delete.png";
         imgDelete.setAttribute(
           "onclick",
           "aluno.deletar(" + this.arrayAlunos[i].matricula + ")"
