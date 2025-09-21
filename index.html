@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="./img/logo di2win.webp" alt="logo di2win">
+      <ul class="menu">
+        <li>
+          <a href="">Extração de Dados <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="">Processamento Inteligente de Documentos(IDP)</a></li>
+            <li><a href="">Transformação digital no setor de saúde</a></li>
+            <li><a href="">Mercado Educacional</a></li>
+            <li><a href="">Serviços Financeiros</a></li>
+            <li><a href="">Transformação digital no setor de construção e imobiliário</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Gêmeos Digitais <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="">Gêmos Digitais de Processos</a></li>
+            <li><a href="">Gêmeos Digitais Indústria</a></li>
+          </ul>
+        </li>
+        <li><a href="">Quem somos</a></li>
+        <li><a href="">Trabalhe Conosco</a></li>
+        <li>
+          <a href="">Blog <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="">Na mídia</a></li>
+          </ul>
+        </li>
+        <li><a href="">Fale Conosco</a></li>
+        <button>Teste Grátis</button>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Cadastro dos Alunos da Residência Tecnológica</h1>
+    <h2>na plataforma da di<b>2</b>win®</h2>
+
+    <div class="card">
+      <div class="lineInput">
+        <label><b>Aluno</b><span>*</span></label>
+        <input type="text" id="aluno" placeholder="nome completo...">
+      </div>
+
+      <div class="info_aluno">
+        <div class="lineInput">
+          <label><b>Matrícula</b><span>*</span></label>
+          <input type="number" id="matricula" placeholder="000000-00">
+        </div>
+
+        <div class="lineInput">
+          <label><b>CPF</b><span>*</span></label>
+          <input type="number" id="cpf" placeholder="000.000.000-00">
+        </div>
+      </div>
+
+      <div class="lineInput">
+        <label><b>Email</b><span>*</span></label>
+        <input type="email" id="email" placeholder="seuemail@email.com">
+      </div>
+
+      <div class="lineInput">
+        <label><b>Faculdade</b><span>*</span></label>
+        <input type="text" id="faculdade" placeholder="faculdade...">
+      </div>
+
+      <div class="lineInput">
+        <label><b>Curso</b><span>*</span></label>
+        <input type="text" id="curso" placeholder="curso...">
+      </div>
+
+      <div class="botoes">
+        <button onclick="aluno.salvar()" id="btn1">Salvar</button>
+        <button onclick="aluno.cancelar()">Cancelar</button>
+      </div>
+    </div>
+
+    <div class="pesquisar">
+      <input type="text" id="pesquisar" placeholder="Digite o nome,matrícula ou faculdade para pesquisar o Aluno desejado..." onkeyup="aluno.pesquisar()">
+    </div>
+
+    <div class="content">
+      <table border="1">
+        <thead>
+          <th class="center">Matrícula</th>
+          <th class="center">Aluno</th>
+          <th class="center">CPF</th>
+          <th class="center">Email</th>
+          <th class="center">Curso</th>
+          <th class="center">Faculdade</th>
+          <th class="center">Ação</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column about">
+        <img src="./img/logo-completa-branco.png.webp" alt="logo di2win branca">
+        <p>Inteligência Digital para que as pessoas descubram e experimentem outras habilidades humanas.</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/di2win/posts/?feedView=all" target="_blank" class="social-icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/share/16yRe5B85r/" target="_blank" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/di2win/" target="_blank" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@di2win" target="_blank" class="social-icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column links">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column links">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#">Processamento Inteligente de Documentos</a></li>
+          <li><a href="#">Gêmeos Digitais Indústria</a></li>
+          <li><a href="#">Gêmeos Digitais Negócios</a></li>
+          <li><a href="#">Termos de Uso IDP</a></li>
+          <li><a href="#">Tecnologias Di2win</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column links">
+        <h4>Mercados</h4>
+        <ul>
+          <li><a href="#">Financeiro</a></li>
+          <li><a href="#">Educação</a></li>
+          <li><a href="#">Indústria</a></li>
+          <li><a href="#">Negócios</a></li>
+          <li><a href="#">Saúde</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="https://www.whatsapp.com/?lang=pt_BR" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Whatsapp</span>
+  </a>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
