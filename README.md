@@ -30,7 +30,7 @@ O sistema consiste em um **Cadastro de Alunos** com operações de **CRUD (Creat
 
 ## 📸 Demonstração  
 
-![preview](https://i.imgur.com/fvqSbOB.png)  
+![preview](https://i.imgur.com/TOvHFut.gif)  
 
 ## ▶️ Como Usar  
 
